@@ -1,0 +1,5 @@
+<launch>
+    <rosparam command="load" file="/home/myubuntu/ros-training/src/battery_indicator/config/param_battery.yaml" />
+    <node name="battery_monitor" pkg="battery_indicator" type="battery_node.py" output="screen"></node>
+    <node name="battery_auto" pkg="battery_indicator" type="auto_charging.py" output="screen"></node>
+</launch>
